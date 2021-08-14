@@ -1,0 +1,117 @@
+.coteudo {
+  display: flex;
+  justify-content:space-between;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 365px;
+  margin: 20px;
+}
+
+.card:hover img {
+  opacity: 0.3;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  transition: 0.5s ease;
+  opacity: 0;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .container {
+  opacity: 0.5;
+  color: white;
+}
+
+img {
+  width: 250px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+body {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+  background-color: #2e2e2e;
+}
+.container {
+  background-color: #222222;
+  color: white;
+  font-size: 16px;
+  padding: 16px 9px;
+  margin: -186px -122px 0px 126px;
+  width: 233px;
+  height: 346px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #2e2e2e;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(209, 209, 209);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+a.active{
+    font-size: 26px;
+    padding: 10px 46px;
+    font-family: inherit;
+}
+
+.topnav a.active {
+  background-color: #0c0c0c;
+  color: rgb(161, 0, 0);
+  font-weight: bold;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
