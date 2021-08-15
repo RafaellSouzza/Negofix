@@ -17,18 +17,41 @@ var salvar = (arquivo, objeto) => {
     fs.writeFileSync(`${pastalocal}${arquivo}`, objetoJson);
   }
   if (fs.existsSync(`${pastalocal}${arquivo}`)) {
-    const data = fs.readFileSync(arquivo, "utf-8");
+    console.log(arquivo);
+    const data = fs.readFileSync(`${pastalocal}${arquivo}`, "utf-8");
     const objetox = JSON.parse(data.toString());
     objetox.push(objeto);
     const objetoJson = JSON.stringify(objetox);
     fs.writeFileSync(`${pastalocal}${arquivo}`, objetoJson);
+    console.log("Seus dados foram incrementados");
   } else {
-    const objetoJson = JSON.stringify(objeto);
+    let home = [objeto];
+    const objetoJson = JSON.stringify(home);
     fs.writeFileSync(`${pastalocal}${arquivo}`, objetoJson);
+    console.log("Seu arquivo foi salvo");
   }
   console.log("Arquivo ", arquivo.split(".")[1], " salvo.");
   console.log("Endereço :", pastalocal, arquivo);
 };
 
+var deletar = (arquivo,deletar) => {
+  const data = fs.readFileSync(`${pastalocal}${arquivo}`, "utf-8");
+  const objeto = JSON.parse(data.toString());
+  console.log(objeto.length);
+  //newobjeto = objeto.filter(objeto => !objeto.imgULR.toLowerCase().indexOf('data:image'.toLowerCase()) > -1);
+  //return el.imgULR != "data:image"; });
+  let newobjeto = [];
+  objeto.forEach((element) => {
+    if (
+      !(element.imgULR.toLowerCase().indexOf(deletar.toLowerCase()) > -1)
+    ) {
+      newobjeto.push(element);
+    }
+  });
+  const objetoJson = JSON.stringify(newobjeto);
+  fs.writeFileSync(`${pastalocal}${arquivo}`, objetoJson);
+  console.log("Seu arquivo foi salvo");
+  console.log(newobjeto.length);
+};
 
-salvar(`dataxxx/data.html`, {'n':1});
+deletar('dia/Filmes.json','data:image');

@@ -29,9 +29,9 @@ body, html {
     padding: 16px;
     width: 400px;
     margin: -1089px 45px;
-    background-color: white;
+    background-color: #0d0d0d;
     z-index: 2;
-    
+    color: white;
   }
   /* Full-width input fields */
   input[type=text], input[type=password] {
@@ -49,7 +49,7 @@ body, html {
   
   /* Set a style for the submit button */
   .btn {
-    background-color: #04AA6D;
+  background-color: #720005;
     color: white;
     padding: 16px 20px;
     border: none;
