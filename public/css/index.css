@@ -6,11 +6,11 @@
     flex-wrap: wrap;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 250px;
-  height: 365px;
-  margin: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 200px;
+    height: 295px;
+    margin: 20px;
 }
 
 .card:hover img {
@@ -50,16 +50,16 @@ body {
   font-family: Arial;
   padding: 0;
   margin: 0;
-  background-color: #2e2e2e;
+  background-color:#1d1e1e;
 }
 .container {
-  background-color: #222222;
-  color: white;
-  font-size: 16px;
-  padding: 16px 9px;
-  margin: -186px -122px 0px 126px;
-  width: 233px;
-  height: 346px;
+    background-color: #222222;
+    color: white;
+    font-size: 16px;
+    padding: 16px 9px;
+    margin: -151px -160px 0px 100px;
+    width: 200px;
+    height: 290px;
 }
 
 .topnav {
