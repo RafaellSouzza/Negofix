@@ -53,7 +53,7 @@ class Dbase {
     const objeto = JSON.parse(data.toString());
     newobjeto = objeto.filter(objeto => objeto.nome.toLowerCase().indexOf(busca.toLowerCase()) > -1);
     console.log('Foram encontrados ',newobjeto.length,' items')
-    return newobjeto.slice(0, 24);;
+    return newobjeto.slice(0, 25);;
   }
   
 }
