@@ -1,0 +1,175 @@
+.coteudo {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px;
+    margin: 0px 0px;
+    flex-wrap: wrap;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 200px;
+    height: 295px;
+    margin: 20px;
+}
+
+.card:hover img {
+  opacity: 0.3;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  transition: 0.5s ease;
+  opacity: 0;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .container {
+  opacity: 0.5;
+  color: white;
+}
+
+img {
+  width: 250px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+body {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+  background-color:#1d1e1e;
+}
+.container {
+    background-color: #222222;
+    color: white;
+    font-size: 16px;
+    padding: 16px 9px;
+    margin: -151px -160px 0px 100px;
+    width: 200px;
+    height: 290px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #0c0c0c;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(209, 209, 209);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+a.active{
+    font-size: 26px;
+    padding: 10px 46px;
+    font-family: inherit;
+}
+
+.topnav a.active {
+  background-color: #0c0c0c;
+  color: rgb(161, 0, 0);
+  font-weight: bold;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+#chat {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .input {
+    width: 600px;
+    border: 1px solid #ddd;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  
+  .btn {
+    width: 600px;
+    height: 50px;
+    font-size: 14px;
+    background: rgb(161 0 0);
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 10px;
+  }
+  
+  .menssagem {
+    width: 600px;
+    height: 400px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x:hidden;
+  }
+  .div_chat{
+    display: block;
+    position: absolute;
+    margin: 157px 282px;
+    background: #181818;
+    padding: 47px;
+    border-radius: 20px;
+    box-shadow: 19px 25px 44px black;
+  }
+  .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #1d1e1e;
+    padding: -2px;
+  }

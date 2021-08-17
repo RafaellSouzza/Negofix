@@ -3,12 +3,14 @@ const app = express();
 const path = require("path");
 const cons = require("consolidate");
 const Dbase = require("./database/database.js");
+const Createhtml = require("./controller/contrutorHtml.js");
 const server = require('http').createServer(app)
 const io = require('socket.io')(server)
 
 const port = 3000;
 
 const dbase = new Dbase();
+const creathtml = new Createhtml();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -66,6 +68,12 @@ io.on('connection', (socket) => {
         socket.emit("buscaFilme", filmes);
       });
 })
+
+
+app.get("/categorias", (req, res) => {
+  res.send(creathtml.newhtml('new.html'))
+ 
+});
 
 server.listen(port, () => {
   console.info(`Rodando na porta ${port}`);
